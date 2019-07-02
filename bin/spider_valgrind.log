@@ -1,0 +1,122 @@
+memory error detector
+==7968== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==7968== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==7968== Command: ./Spider
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C30F78: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BC6: queue_is_contain_same (queue.c:153)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C31FBC: strcmp (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BDC: queue_is_contain_same (queue.c:154)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C31FAA: strcmp (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BDC: queue_is_contain_same (queue.c:154)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x401BDF: queue_is_contain_same (queue.c:154)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C3548F: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401C59: queue_is_contain_same (queue.c:167)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C35478: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401C10: queue_is_contain_same (queue.c:160)
+==7968==    by 0x40297B: regex_draw_html_url (regex_url.c:96)
+==7968==    by 0x402337: main (main.c:186)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C30F78: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401128: spider_analytic_url (spider.c:45)
+==7968==    by 0x40239E: main (main.c:199)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x40114B: spider_analytic_url (spider.c:46)
+==7968==    by 0x40239E: main (main.c:199)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x401199: spider_analytic_url (spider.c:48)
+==7968==    by 0x40239E: main (main.c:199)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==7968==    by 0x4EAA1CA: vsprintf (iovsprintf.c:42)
+==7968==    by 0x4E8F9C6: sprintf (sprintf.c:32)
+==7968==    by 0x4013FF: spider_create_head (spider.c:117)
+==7968==    by 0x4023D9: main (main.c:205)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C30F78: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BC6: queue_is_contain_same (queue.c:153)
+==7968==    by 0x4026BC: regex_draw_pic_url (regex_url.c:40)
+==7968==    by 0x402434: main (main.c:214)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C35478: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401C10: queue_is_contain_same (queue.c:160)
+==7968==    by 0x4026BC: regex_draw_pic_url (regex_url.c:40)
+==7968==    by 0x402434: main (main.c:214)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C3548F: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401C59: queue_is_contain_same (queue.c:167)
+==7968==    by 0x4026BC: regex_draw_pic_url (regex_url.c:40)
+==7968==    by 0x402434: main (main.c:214)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C31FBC: strcmp (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BDC: queue_is_contain_same (queue.c:154)
+==7968==    by 0x4026BC: regex_draw_pic_url (regex_url.c:40)
+==7968==    by 0x402434: main (main.c:214)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C31FAA: strcmp (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401BDC: queue_is_contain_same (queue.c:154)
+==7968==    by 0x4026BC: regex_draw_pic_url (regex_url.c:40)
+==7968==    by 0x402434: main (main.c:214)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4C30F78: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7968==    by 0x401128: spider_analytic_url (spider.c:45)
+==7968==    by 0x402018: download_pic (main.c:105)
+==7968==    by 0x402487: main (main.c:228)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x40114B: spider_analytic_url (spider.c:46)
+==7968==    by 0x402018: download_pic (main.c:105)
+==7968==    by 0x402487: main (main.c:228)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x401199: spider_analytic_url (spider.c:48)
+==7968==    by 0x402018: download_pic (main.c:105)
+==7968==    by 0x402487: main (main.c:228)
+==7968== 
+==7968== Conditional jump or move depends on uninitialised value(s)
+==7968==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==7968==    by 0x4E8F898: printf (printf.c:33)
+==7968==    by 0x4020F7: download_pic (main.c:129)
+==7968==    by 0x402487: main (main.c:228)
+==7968== 
+==7968== 
+==7968== HEAP SUMMARY:
+==7968==     in use at exit: 0 bytes in 0 blocks
+==7968==   total heap usage: 25,298 allocs, 25,298 frees, 19,953,884 bytes allocated
+==7968== 
+==7968== All heap blocks were freed -- no leaks are possible
+==7968== 
+==7968== For counts of detected and suppressed errors, rerun with: -v
+==7968== Use --track-origins=yes to see where uninitialised values come from
+==7968== ERROR SUMMARY: 3486440 errors from 19 contexts (suppressed: 0 from 0)
